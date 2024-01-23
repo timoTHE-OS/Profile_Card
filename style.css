@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* border: solid 1px; */
+  /* margin: solid 4px; */
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: last center;
+  justify-content: center;
+  background-color: grey;
+  /* border: solid 1px; */
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: white;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.profile-card::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  background-color: blue;
+  opacity: 0.5;
+}
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: blue;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+.image .Profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid white;
+}
+.profile-card .card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+.card-text .name {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.card-text .job {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.media-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  /* padding-top: -200px; */
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-items: baseline; */
+  color: white;
+  background-color: blue;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+  border-radius: 40%;
+  text-decoration: none;
+  margin: 0 8px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: none; */
+  /* border: solid 1px; */
+  justify-content: center;
+  margin-top: 25px;
+  /* border-radius: 24px; */
+}
+.buttons .button {
+  color: white;
+  background-color: rgb(98, 98, 231);
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  border-radius: 24px;
+  margin: 0 10px 20px 30px;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  /* display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    border-radius: 24px; */
+}
+
+.buttons .button:hover {
+  background-color: red;
+}
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  /* justify-items: center; */
+  margin-top: 25px;
+}
+.analytics .data {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 20px;
+  border-right: 2px solid rgb(172, 168, 168);
+}
+
+.data i(
+    font-size: 18px;
+    margin-right: 6px;
+) .data:last-child {
+  border-right: none;
+}
